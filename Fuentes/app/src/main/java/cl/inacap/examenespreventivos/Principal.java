@@ -3,7 +3,10 @@ package cl.inacap.examenespreventivos;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.List;
@@ -28,5 +31,14 @@ public class Principal extends AppCompatActivity {
         adaptador = new PacientesArrayAdapter(this,R.layout.pacientes_list,pacientes);
         pacientesLv = findViewById(R.id.pacientesLv);
         pacientesLv.setAdapter(adaptador);
+        pacientesLv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> AdapterView, View view, int i, long l) {
+                Intent intent = new Intent(Principal.this, VerPacientesActivity.class);
+                Paciente pacienteActual = pacientes.get(i);
+                intent.putExtra("paciente", pacienteActual);
+                startActivity(intent);
+            }
+        });
     }
 }
