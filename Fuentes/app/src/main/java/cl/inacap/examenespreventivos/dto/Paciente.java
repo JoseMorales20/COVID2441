@@ -9,14 +9,14 @@ public class Paciente implements Serializable {
     private String apellido;
     private int temperatura;
     private int presion;
-    private int fecha;
+    private String fecha;
     private String area;
 
-    public int getFecha() {
+    public String getFecha() {
         return fecha;
     }
 
-    public void setFecha(int fecha) {
+    public void setFecha(String fecha) {
         this.fecha = fecha;
     }
 

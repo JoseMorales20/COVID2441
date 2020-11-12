@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="imagenLogo">60dp</dimen>
-    <dimen name="tamaño_letra_base">40dp</dimen>
+    <dimen name="tamaño_letra_base">30dp</dimen>
+    <dimen name="margin_top_base">10dp</dimen>
 </resources>
