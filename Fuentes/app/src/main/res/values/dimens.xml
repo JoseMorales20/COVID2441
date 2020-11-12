@@ -3,4 +3,5 @@
     <dimen name="imagenLogo">60dp</dimen>
     <dimen name="tamaño_letra_base">30dp</dimen>
     <dimen name="margin_top_base">10dp</dimen>
+    <dimen name="margin_boton_float">60dp</dimen>
 </resources>

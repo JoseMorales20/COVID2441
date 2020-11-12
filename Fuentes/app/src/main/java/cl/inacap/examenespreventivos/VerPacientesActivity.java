@@ -14,7 +14,12 @@ public class VerPacientesActivity extends AppCompatActivity {
     private TextView nombreTxt;
     private TextView apellidoTxt;
     private TextView rutTxt;
-    private TextView fehcaTxt;
+    private TextView fechaTxt;
+    private TextView areaTxt;
+    private TextView sintomasTxt;
+    private TextView temperaturaTxt;
+    private TextView tosTxt;
+    private TextView presionTxt;
 
     @Override
     public boolean onSupportNavigateUp(){
@@ -29,8 +34,13 @@ public class VerPacientesActivity extends AppCompatActivity {
         this.toolbar = findViewById(R.id.toolbar);
         this.nombreTxt = findViewById(R.id.nombreTxt);
         this.apellidoTxt = findViewById(R.id.apellidoTxt);
-        this.fehcaTxt = findViewById(R.id.fechaTxt);
+        this.fechaTxt = findViewById(R.id.fechaTxt);
         this.rutTxt = findViewById(R.id.rutTxt);
+        this.areaTxt = findViewById(R.id.areaTxt);
+        this.sintomasTxt = findViewById(R.id.sintomasTxt);
+        this.temperaturaTxt = findViewById(R.id.temperaturaTxt);
+        this.tosTxt = findViewById(R.id.tosTxt);
+        this.presionTxt = findViewById(R.id.presionTxt);
         this.getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         this.getSupportActionBar().setDisplayShowHomeEnabled(true);
         this.setSupportActionBar(this.toolbar);
@@ -39,7 +49,10 @@ public class VerPacientesActivity extends AppCompatActivity {
             this.nombreTxt.setText(paciente.getNombre());
             this.apellidoTxt.setText(paciente.getApellido());
             this.rutTxt.setText(paciente.getRut());
-            this.rutTxt.setText(paciente.getFecha());
+            this.fechaTxt.setText(paciente.getFecha());
+            this.areaTxt.setText(paciente.getArea());
+            this.temperaturaTxt.setText(paciente.getTemperatura());
+            this.presionTxt.setText(paciente.getPresion());
         }
     }
 }

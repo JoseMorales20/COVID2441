@@ -5,18 +5,45 @@ import java.io.Serializable;
 public class Paciente implements Serializable {
 
     private String nombre;
+    private boolean sintoma;
+    private boolean tos;
+    private int id;
     private String rut;
     private String apellido;
     private int temperatura;
     private int presion;
-    private String fecha;
+    private int fecha;
     private String area;
 
-    public String getFecha() {
+    public boolean isSintoma() {
+        return sintoma;
+    }
+
+    public void setSintoma(boolean sintoma) {
+        this.sintoma = sintoma;
+    }
+
+    public boolean isTos() {
+        return tos;
+    }
+
+    public void setTos(boolean tos) {
+        this.tos = tos;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getFecha() {
         return fecha;
     }
 
-    public void setFecha(String fecha) {
+    public void setFecha(int fecha) {
         this.fecha = fecha;
     }
 

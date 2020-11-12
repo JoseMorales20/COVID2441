@@ -6,16 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/aquiTxt"
-        android:orientation="vertical"
+
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="presiona aqui"
-        android:gravity="center"
-        android:textSize="@dimen/tamaño_letra_base">
-
-    </TextView>
+        android:text="@string/ingresar"
+        android:textSize="@dimen/tamaño_letra_base"
+        android:id="@+id/ingresarBtn"
+        >
+    </Button>
 
 
 </LinearLayout>

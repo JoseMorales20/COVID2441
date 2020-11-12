@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VerPacientesActivity"
+    tools:context=".Principal"
     android:orientation="vertical">
 
-    <include layout="@layout/toolbar"></include>
-
+    <include
+        layout="@layout/toolbar">
+    </include>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
         android:layout_width="match_parent"
@@ -23,14 +24,14 @@
             android:text="Nombre"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-
-            android:id="@+id/nombreTxt"
+        <EditText
+            android:background="@color/divider"
+            android:id="@+id/nombreTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -46,13 +47,14 @@
             android:text="Apellido"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/apellidoTxt"
+        <EditText
+            android:background="@color/divider"
+            android:id="@+id/apellidoTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -68,13 +70,14 @@
             android:text="Rut"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/rutTxt"
+        <EditText
+            android:background="@color/divider"
+            android:id="@+id/rutTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -91,7 +94,8 @@
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
         <TextView
-            android:id="@+id/fechaTxt"
+            android:background="@color/divider"
+            android:id="@+id/fechaTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -112,13 +116,14 @@
             android:text="Area"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/areaTxt"
+
+        <Spinner
+            android:id="@+id/areaTxt_pc"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+            android:background="@color/divider">
+        </Spinner>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -134,13 +139,12 @@
             android:text="¿sintomas?"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/sintomasTxt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <Switch
+            android:id="@+id/sintomasTxt_pc"
             android:layout_weight="1"
-            android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </Switch>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -156,13 +160,14 @@
             android:text="temeratura"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/temperaturaTxt"
+        <EditText
+            android:background="@color/divider"
+            android:id="@+id/temperaturaTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+        </EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -179,13 +184,13 @@
             android:text="¿tos?"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/tosTxt"
+        <Switch
+            android:id="@+id/tosTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+        </Switch>
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="@dimen/margin_top_base"
@@ -201,14 +206,25 @@
             android:text="presion"
             android:textSize="@dimen/tamaño_letra_base">
         </TextView>
-        <TextView
-            android:id="@+id/presionTxt"
+        <EditText
+            android:background="@color/divider"
+            android:id="@+id/presionTxt_pc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/tamaño_letra_base">
-        </TextView>
+        </EditText>
     </LinearLayout>
 
+    <Button
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textSize="@dimen/tamaño_letra_base"
+        android:layout_marginTop="@dimen/tamaño_letra_base"
+        android:id="@+id/ingresarBtn_pc">
+    </Button>
 
-</LinearLayout>
+
+    </LinearLayout>
